@@ -20,19 +20,10 @@
 					@click="isCartOpen = false"
 					class="text-gray-500 hover:text-red-500"
 				>
-					<svg
-						class="w-6 h-6"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M6 18L18 6M6 6l12 12"
-						></path>
-					</svg>
+					<component
+						:is="HeroIcons.XMarkIcon"
+						class="w-5 h-5 text-gray-700"
+					/>
 				</button>
 			</div>
 
@@ -147,6 +138,7 @@
 <script setup>
 import { ref } from 'vue';
 import { useCart } from '../composables/useCart';
+import * as HeroIcons from '@heroicons/vue/24/solid';
 import { Icon } from '@iconify/vue';
 
 const {

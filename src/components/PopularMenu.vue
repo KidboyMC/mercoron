@@ -69,19 +69,10 @@
 						@click="handleAddToCart(item)"
 						class="w-10 h-10 shrink-0 bg-orange-500 text-white rounded-full flex items-center justify-center hover:bg-orange-600 shadow-lg transition"
 					>
-						<svg
-							class="w-5 h-5"
-							fill="none"
-							stroke="currentColor"
-							viewBox="0 0 24 24"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M12 4v16m8-8H4"
-							></path>
-						</svg>
+						<component
+							:is="HeroIcons.PlusIcon"
+							class="w-6 h-6"
+						/>
 					</button>
 				</div>
 			</div>

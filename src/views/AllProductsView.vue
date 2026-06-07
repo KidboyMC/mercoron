@@ -11,24 +11,15 @@
 		</div>
 
 		<div
-			class="flex flex-col md:flex-row gap-4 justify-between items-center mb-10 bg-white p-4 rounded-3xl shadow-sm border border-orange-50/50"
+			class="flex flex-col lg:flex-row gap-5 justify-between items-center mb-10 bg-white p-4 md:p-5 rounded-3xl shadow-sm border border-orange-50/50"
 		>
 			<div
-				class="flex items-center bg-[#FCF8F4] px-4 py-2.5 rounded-2xl border border-orange-100 w-full md:w-72"
+				class="flex items-center bg-[#FCF8F4] px-4 py-2.5 rounded-2xl border border-orange-100 w-full lg:w-72 shrink-0"
 			>
-				<svg
-					class="w-5 h-5 text-gray-400 shrink-0"
-					fill="none"
-					stroke="currentColor"
-					viewBox="0 0 24 24"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-					></path>
-				</svg>
+				<component
+					:is="HeroIcons.MagnifyingGlassIcon"
+					class="w-5 h-5 text-gray-500"
+				/>
 				<input
 					v-model="searchQuery"
 					type="text"
@@ -37,15 +28,13 @@
 				/>
 			</div>
 
-			<div
-				class="flex space-x-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 hide-scrollbar"
-			>
+			<div class="flex flex-wrap justify-center gap-2 w-full flex-1">
 				<button
 					v-for="category in categories"
 					:key="category"
 					@click="selectedCategory = category"
 					:class="[
-						'px-5 py-2 rounded-xl text-sm font-bold transition',
+						'px-5 py-2 rounded-xl text-sm font-bold transition whitespace-nowrap',
 						selectedCategory === category
 							? 'bg-orange-500 text-white shadow-md'
 							: 'bg-[#FCF8F4] text-[#4A3B32] border border-orange-100/50',
@@ -55,12 +44,10 @@
 				</button>
 			</div>
 
-			<div
-				class="flex items-center space-x-2 w-full md:w-auto justify-end"
-			>
+			<div class="flex items-center w-full lg:w-auto shrink-0">
 				<select
 					v-model="sortBy"
-					class="bg-[#FCF8F4] text-sm font-semibold text-[#4A3B32] px-3 py-2.5 rounded-2xl border border-orange-100 outline-none cursor-pointer"
+					class="bg-[#FCF8F4] text-sm font-semibold text-[#4A3B32] px-3 py-2.5 rounded-2xl border border-orange-100 outline-none cursor-pointer w-full lg:w-auto"
 				>
 					<option value="default">Rekomendasi</option>
 					<option value="price-low">Harga: Rendah ke Tinggi</option>
@@ -95,6 +82,7 @@ import { ref, computed, onMounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import ProductCard from '../components/ProductCard.vue';
 import productsData from '../data/products.json';
+import * as HeroIcons from '@heroicons/vue/24/solid';
 
 const route = useRoute();
 const searchQuery = ref('');
