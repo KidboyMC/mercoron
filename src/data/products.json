@@ -1,0 +1,86 @@
+[
+	{
+		"id": 1,
+		"name": "Makaroni Original",
+		"price": 3,
+		"sizes": [
+			{ "name": "50g", "price": 3 },
+			{ "name": "100g", "price": 5 }
+		],
+		"label": "Best Seller",
+		"icon": "FireIcon",
+		"category": "Makaroni",
+		"desc": "Makaroni renyah gurih dengan bumbu asin spesial yang pas di lidah. Cocok buat kamu yang suka ngemil santai tanpa rasa pedas!",
+		"image": "/img/makaroni-original.png",
+		"isPopular": true,
+		"isSpecial": false
+	},
+	{
+		"id": 2,
+		"name": "Makaroni Balado",
+		"price": 3,
+		"sizes": [
+			{ "name": "50g", "price": 3 },
+			{ "name": "100g", "price": 5 }
+		],
+		"label": "Best Seller",
+		"icon": "FireIcon",
+		"category": "Makaroni",
+		"desc": "Makaroni super garing dengan balutan bumbu balado pedas manis yang nampol. Sensasi pedasnya pas banget buat nemenin nugas atau drakoran.",
+		"image": "/img/makaroni-balado.png",
+		"isPopular": true,
+		"isSpecial": false
+	},
+	{
+		"id": 3,
+		"name": "Makaroni Jagung Bakar",
+		"price": 3,
+		"sizes": [
+			{ "name": "50g", "price": 3 },
+			{ "name": "100g", "price": 5 }
+		],
+		"label": "Populer",
+		"icon": "HandThumbUpIcon",
+		"category": "Makaroni",
+		"desc": "Perpaduan makaroni garing dengan bumbu jagung bakar manis gurih yang medok. Aromanya wangi, rasanya bikin nggak bisa berhenti ngunyah!",
+		"image": "/img/makaroni-jagungbakar.png",
+		"isPopular": false,
+		"isSpecial": true
+	},
+	{
+		"id": 4,
+		"name": "Roti Goreng Gula",
+		"price": 5,
+		"label": "Best Seller",
+		"icon": "FireIcon",
+		"category": "Roti Goreng",
+		"desc": "Roti goreng empuk nan klasik dengan taburan bedak gula halus yang lumer di mulut. Manisnya pas, cocok banget buat temen ngopi atau ngeteh sore.",
+		"image": "/img/rotigoreng-gula.png",
+		"isPopular": true,
+		"isSpecial": false
+	},
+	{
+		"id": 5,
+		"name": "Roti Goreng Isi Cokelat",
+		"price": 5,
+		"label": "Populer",
+		"icon": "HandThumbUpIcon",
+		"category": "Roti Goreng",
+		"desc": "Roti goreng lembut dengan isian cokelat lumer yang tumpah-tumpah di dalam. Sekali gigit, manisnya langsung meledak bikin mood naik lagi!",
+		"image": "/img/rotigoreng-cokelat.png",
+		"isPopular": false,
+		"isSpecial": true
+	},
+	{
+		"id": 6,
+		"name": "Roti Goreng Isi Ayam",
+		"price": 5,
+		"label": "Populer",
+		"icon": "HandThumbUpIcon",
+		"category": "Roti Goreng",
+		"desc": "Roti goreng gurih berisi suwiran ayam rempah yang padat dan nikmat. Pilihan asik buat ganjel perut yang lagi laper di sela-sela jam kampus!",
+		"image": "/img/rotigoreng-ayam.png",
+		"isPopular": false,
+		"isSpecial": true
+	}
+]
